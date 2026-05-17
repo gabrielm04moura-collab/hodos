@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(git clone https://github.com/gabrielm04moura-collab/hodos \"c:\\\\Users\\\\gabri\\\\OneDrive\\\\Documentos\\\\hodos_temp\" 2>&1)",
+      "PowerShell($gitPaths = @\\(\"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\", \"C:\\\\Program Files \\(x86\\)\\\\Git\\\\bin\\\\git.exe\", \"$env:LOCALAPPDATA\\\\Programs\\\\Git\\\\bin\\\\git.exe\"\\); foreach \\($p in $gitPaths\\) { if \\(Test-Path $p\\) { Write-Output \"Found: $p\" } })",
+      "PowerShell(Get-Command git -ErrorAction SilentlyContinue)",
+      "PowerShell(node --version 2>&1)",
+      "PowerShell(npm --version 2>&1)",
+      "PowerShell(npx --version 2>&1)",
+      "PowerShell(cd \"c:\\\\Users\\\\gabri\\\\OneDrive\\\\Documentos\\\\hodos\"; $env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git init; git remote add origin https://github.com/gabrielm04moura-collab/hodos.git 2>&1)",
+      "PowerShell(cd \"c:\\\\Users\\\\gabri\\\\OneDrive\\\\Documentos\\\\hodos\"; $env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git remote add origin https://github.com/gabrielm04moura-collab/hodos.git 2>&1)",
+      "PowerShell(cd \"c:\\\\Users\\\\gabri\\\\OneDrive\\\\Documentos\\\\hodos\"; $env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git config user.email \"gabrielm04moura@gmail.com\"; git config user.name \"Gabriel Moura\"; git add .; git commit -m \"feat: projeto inicial Hodos — Next.js + perguntas bíblicas\" 2>&1)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\gabri\\Downloads"
+    ]
+  }
+}

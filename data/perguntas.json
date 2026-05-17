@@ -1,0 +1,533 @@
+{
+  "metadata": {
+    "projeto": "Hodos",
+    "versao": "1.0.0",
+    "total_perguntas": 45,
+    "idioma": "pt-BR",
+    "traducao_referencia": "Almeida Revista e Atualizada (ARA)",
+    "estrutura": "mundos > licoes > perguntas. Dificuldade: 1=fácil, 2=médio, 3=difícil. Alternativa correta indicada pelo índice (0-3)."
+  },
+  "mundos": [
+    {
+      "id": "mundo_1",
+      "ordem": 1,
+      "nome": "Origens",
+      "descricao": "Gênesis e Êxodo — o início de tudo, a aliança e a libertação.",
+      "licoes": [
+        {
+          "id": "licao_1_1",
+          "ordem": 1,
+          "nome": "Criação",
+          "perguntas": [
+            {
+              "id": "q001",
+              "dificuldade": 1,
+              "enunciado": "Em quantos dias Deus criou o mundo, segundo Gênesis?",
+              "alternativas": ["3 dias", "5 dias", "6 dias", "10 dias"],
+              "correta": 2,
+              "explicacao": "Deus criou o mundo em seis dias e descansou no sétimo (Gênesis 2:2).",
+              "referencia": "Gênesis 1-2"
+            },
+            {
+              "id": "q002",
+              "dificuldade": 1,
+              "enunciado": "Quem foram os primeiros seres humanos criados por Deus?",
+              "alternativas": ["Caim e Abel", "Adão e Eva", "Noé e sua esposa", "Abraão e Sara"],
+              "correta": 1,
+              "explicacao": "Deus criou Adão do pó da terra e Eva da costela dele (Gênesis 2:7,22).",
+              "referencia": "Gênesis 2"
+            },
+            {
+              "id": "q003",
+              "dificuldade": 2,
+              "enunciado": "O que Deus criou no primeiro dia, segundo Gênesis 1?",
+              "alternativas": ["O Sol e a Lua", "A luz", "As plantas", "Os animais"],
+              "correta": 1,
+              "explicacao": "No primeiro dia Deus disse: 'Haja luz', e separou a luz das trevas. O Sol e a Lua só foram criados no quarto dia.",
+              "referencia": "Gênesis 1:3-5"
+            },
+            {
+              "id": "q004",
+              "dificuldade": 3,
+              "enunciado": "Quais foram os quatro rios que se ramificavam do rio do Éden?",
+              "alternativas": ["Jordão, Nilo, Tigre e Eufrates", "Pisom, Giom, Hidequel e Eufrates", "Eufrates, Tigre, Jaboque e Jordão", "Nilo, Eufrates, Arnom e Jordão"],
+              "correta": 1,
+              "explicacao": "O rio se dividia em Pisom, Giom, Hidequel (identificado como Tigre) e Eufrates (Gênesis 2:10-14).",
+              "referencia": "Gênesis 2:10-14"
+            }
+          ]
+        },
+        {
+          "id": "licao_1_2",
+          "ordem": 2,
+          "nome": "A queda",
+          "perguntas": [
+            {
+              "id": "q005",
+              "dificuldade": 1,
+              "enunciado": "Qual animal tentou Eva no jardim do Éden?",
+              "alternativas": ["Um leão", "Uma serpente", "Um lobo", "Uma águia"],
+              "correta": 1,
+              "explicacao": "A serpente era o mais astuto dos animais e enganou Eva (Gênesis 3:1).",
+              "referencia": "Gênesis 3:1"
+            },
+            {
+              "id": "q006",
+              "dificuldade": 2,
+              "enunciado": "Qual foi a primeira consequência imediata da desobediência?",
+              "alternativas": ["Perderam a fala", "Perceberam que estavam nus", "Ficaram doentes", "Esqueceram o nome de Deus"],
+              "correta": 1,
+              "explicacao": "Abriram-se os olhos deles e perceberam que estavam nus, costurando folhas de figueira (Gênesis 3:7).",
+              "referencia": "Gênesis 3:7"
+            },
+            {
+              "id": "q007",
+              "dificuldade": 3,
+              "enunciado": "Qual passagem é considerada a primeira promessa messiânica da Bíblia (protoevangelho)?",
+              "alternativas": ["Gênesis 1:1", "Gênesis 3:15", "Gênesis 12:3", "Gênesis 22:18"],
+              "correta": 1,
+              "explicacao": "Gênesis 3:15 anuncia que a semente da mulher esmagaria a cabeça da serpente — a primeira promessa de redenção.",
+              "referencia": "Gênesis 3:15"
+            }
+          ]
+        },
+        {
+          "id": "licao_1_3",
+          "ordem": 3,
+          "nome": "Noé e o dilúvio",
+          "perguntas": [
+            {
+              "id": "q008",
+              "dificuldade": 1,
+              "enunciado": "Quem construiu uma arca para salvar sua família e os animais do dilúvio?",
+              "alternativas": ["Moisés", "Abraão", "Noé", "Davi"],
+              "correta": 2,
+              "explicacao": "Deus ordenou a Noé que construísse uma arca de madeira de cipreste (Gênesis 6:14).",
+              "referencia": "Gênesis 6"
+            },
+            {
+              "id": "q009",
+              "dificuldade": 2,
+              "enunciado": "Quantos dias e noites choveu durante o dilúvio?",
+              "alternativas": ["7 dias e 7 noites", "30 dias e 30 noites", "40 dias e 40 noites", "100 dias e 100 noites"],
+              "correta": 2,
+              "explicacao": "Choveu sobre a terra quarenta dias e quarenta noites (Gênesis 7:12).",
+              "referencia": "Gênesis 7:12"
+            },
+            {
+              "id": "q010",
+              "dificuldade": 3,
+              "enunciado": "Em qual monte a arca de Noé repousou após o dilúvio?",
+              "alternativas": ["Monte Sinai", "Monte Ararate", "Monte Hor", "Monte Nebo"],
+              "correta": 1,
+              "explicacao": "A arca repousou sobre os montes de Ararate (Gênesis 8:4).",
+              "referencia": "Gênesis 8:4"
+            }
+          ]
+        },
+        {
+          "id": "licao_1_4",
+          "ordem": 4,
+          "nome": "Abraão, pai da fé",
+          "perguntas": [
+            {
+              "id": "q011",
+              "dificuldade": 1,
+              "enunciado": "Qual era o nome original de Abraão antes de Deus mudá-lo?",
+              "alternativas": ["Abrão", "Isaque", "Jacó", "Eber"],
+              "correta": 0,
+              "explicacao": "Deus mudou o nome de Abrão para Abraão, que significa 'pai de muitas nações' (Gênesis 17:5).",
+              "referencia": "Gênesis 17:5"
+            },
+            {
+              "id": "q012",
+              "dificuldade": 2,
+              "enunciado": "Qual filho Deus pediu que Abraão oferecesse em sacrifício como prova de fé?",
+              "alternativas": ["Ismael", "Isaque", "Jacó", "Esaú"],
+              "correta": 1,
+              "explicacao": "Deus pediu Isaque, o filho da promessa, mas providenciou um cordeiro em seu lugar (Gênesis 22).",
+              "referencia": "Gênesis 22"
+            },
+            {
+              "id": "q013",
+              "dificuldade": 3,
+              "enunciado": "Quantos anos Abraão tinha quando seu filho Isaque nasceu?",
+              "alternativas": ["75 anos", "90 anos", "100 anos", "120 anos"],
+              "correta": 2,
+              "explicacao": "Abraão tinha cem anos quando Isaque nasceu; Sara tinha noventa (Gênesis 21:5).",
+              "referencia": "Gênesis 21:5"
+            }
+          ]
+        },
+        {
+          "id": "licao_1_5",
+          "ordem": 5,
+          "nome": "Moisés e a libertação",
+          "perguntas": [
+            {
+              "id": "q014",
+              "dificuldade": 1,
+              "enunciado": "Como Moisés foi salvo quando bebê do decreto do Faraó?",
+              "alternativas": ["Foi escondido em uma caverna", "Foi colocado em um cesto no rio Nilo", "Foi levado para Canaã", "Foi entregue aos sacerdotes"],
+              "correta": 1,
+              "explicacao": "Sua mãe o colocou num cesto de junco betumado às margens do Nilo, onde foi encontrado pela filha do Faraó (Êxodo 2).",
+              "referencia": "Êxodo 2"
+            },
+            {
+              "id": "q015",
+              "dificuldade": 2,
+              "enunciado": "Em qual monte Moisés recebeu os Dez Mandamentos?",
+              "alternativas": ["Monte Sião", "Monte Sinai", "Monte das Oliveiras", "Monte Carmelo"],
+              "correta": 1,
+              "explicacao": "Deus entregou os Dez Mandamentos a Moisés no monte Sinai (Êxodo 19-20).",
+              "referencia": "Êxodo 19-20"
+            },
+            {
+              "id": "q016",
+              "dificuldade": 3,
+              "enunciado": "Qual foi a décima e última praga enviada sobre o Egito?",
+              "alternativas": ["Trevas sobre o Egito", "Pragas de gafanhotos", "Morte dos primogênitos", "Águas em sangue"],
+              "correta": 2,
+              "explicacao": "A décima praga foi a morte de todos os primogênitos do Egito; os hebreus foram protegidos pelo sangue do cordeiro nas portas (Êxodo 12).",
+              "referencia": "Êxodo 12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mundo_2",
+      "ordem": 2,
+      "nome": "Reis e Profetas",
+      "descricao": "De Samuel ao exílio — o tempo dos reis de Israel e dos profetas que falaram em nome de Deus.",
+      "licoes": [
+        {
+          "id": "licao_2_1",
+          "ordem": 1,
+          "nome": "Os primeiros reis",
+          "perguntas": [
+            {
+              "id": "q017",
+              "dificuldade": 1,
+              "enunciado": "Quem foi o primeiro rei de Israel?",
+              "alternativas": ["Davi", "Salomão", "Saul", "Samuel"],
+              "correta": 2,
+              "explicacao": "Saul foi ungido pelo profeta Samuel como o primeiro rei de Israel (1 Samuel 10:1).",
+              "referencia": "1 Samuel 10"
+            },
+            {
+              "id": "q018",
+              "dificuldade": 1,
+              "enunciado": "Qual gigante filisteu foi derrotado pelo jovem Davi?",
+              "alternativas": ["Golias", "Sansão", "Nabucodonosor", "Senaqueribe"],
+              "correta": 0,
+              "explicacao": "Davi derrotou o gigante Golias com uma funda e uma pedra (1 Samuel 17).",
+              "referencia": "1 Samuel 17"
+            },
+            {
+              "id": "q019",
+              "dificuldade": 2,
+              "enunciado": "Qual rei é conhecido como 'o mais sábio que já existiu'?",
+              "alternativas": ["Davi", "Salomão", "Ezequias", "Josias"],
+              "correta": 1,
+              "explicacao": "Salomão pediu sabedoria a Deus e tornou-se o mais sábio dos reis (1 Reis 3:12).",
+              "referencia": "1 Reis 3"
+            },
+            {
+              "id": "q020",
+              "dificuldade": 3,
+              "enunciado": "Após a morte de Salomão, o reino se dividiu em duas partes. Quais foram?",
+              "alternativas": ["Israel ao norte e Judá ao sul", "Galileia e Samaria", "Egito e Babilônia", "Efraim e Manassés"],
+              "correta": 0,
+              "explicacao": "Israel (10 tribos do norte, capital Samaria) e Judá (2 tribos do sul, capital Jerusalém) (1 Reis 12).",
+              "referencia": "1 Reis 12"
+            }
+          ]
+        },
+        {
+          "id": "licao_2_2",
+          "ordem": 2,
+          "nome": "Profetas em ação",
+          "perguntas": [
+            {
+              "id": "q021",
+              "dificuldade": 1,
+              "enunciado": "Qual profeta foi engolido por um grande peixe após tentar fugir do chamado de Deus para Nínive?",
+              "alternativas": ["Elias", "Jonas", "Jeremias", "Habacuque"],
+              "correta": 1,
+              "explicacao": "Jonas tentou fugir e foi engolido por um grande peixe, onde ficou três dias (Jonas 1:17).",
+              "referencia": "Jonas 1-2"
+            },
+            {
+              "id": "q022",
+              "dificuldade": 2,
+              "enunciado": "Qual profeta desafiou os 450 profetas de Baal no monte Carmelo?",
+              "alternativas": ["Eliseu", "Elias", "Isaías", "Daniel"],
+              "correta": 1,
+              "explicacao": "Elias desafiou os profetas de Baal e o fogo do Senhor consumiu seu altar encharcado (1 Reis 18).",
+              "referencia": "1 Reis 18"
+            },
+            {
+              "id": "q023",
+              "dificuldade": 2,
+              "enunciado": "Quem foi o profeta jogado na cova dos leões por orar a Deus?",
+              "alternativas": ["Daniel", "Ezequiel", "Jeremias", "Isaías"],
+              "correta": 0,
+              "explicacao": "Daniel foi lançado na cova dos leões no reinado de Dario, e Deus o livrou (Daniel 6).",
+              "referencia": "Daniel 6"
+            },
+            {
+              "id": "q024",
+              "dificuldade": 3,
+              "enunciado": "Qual profeta teve a visão do vale de ossos secos que ganhavam vida?",
+              "alternativas": ["Isaías", "Jeremias", "Ezequiel", "Zacarias"],
+              "correta": 2,
+              "explicacao": "Ezequiel teve a visão do vale dos ossos secos, símbolo da restauração de Israel (Ezequiel 37).",
+              "referencia": "Ezequiel 37"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mundo_3",
+      "ordem": 3,
+      "nome": "Vida de Jesus",
+      "descricao": "Os Evangelhos — do nascimento à ressurreição de Cristo.",
+      "licoes": [
+        {
+          "id": "licao_3_1",
+          "ordem": 1,
+          "nome": "Nascimento e infância",
+          "perguntas": [
+            {
+              "id": "q025",
+              "dificuldade": 1,
+              "enunciado": "Em qual cidade Jesus nasceu?",
+              "alternativas": ["Nazaré", "Jerusalém", "Belém", "Cafarnaum"],
+              "correta": 2,
+              "explicacao": "Jesus nasceu em Belém da Judeia, cumprindo a profecia de Miqueias 5:2 (Mateus 2:1).",
+              "referencia": "Mateus 2:1"
+            },
+            {
+              "id": "q026",
+              "dificuldade": 1,
+              "enunciado": "Qual anjo anunciou a Maria que ela seria a mãe de Jesus?",
+              "alternativas": ["Miguel", "Gabriel", "Rafael", "Uriel"],
+              "correta": 1,
+              "explicacao": "O anjo Gabriel foi enviado por Deus a Nazaré (Lucas 1:26-27).",
+              "referencia": "Lucas 1:26-38"
+            },
+            {
+              "id": "q027",
+              "dificuldade": 2,
+              "enunciado": "Para qual país a família de Jesus fugiu por causa de Herodes?",
+              "alternativas": ["Síria", "Egito", "Babilônia", "Etiópia"],
+              "correta": 1,
+              "explicacao": "José foi avisado em sonho a fugir para o Egito com Maria e o menino (Mateus 2:13-14).",
+              "referencia": "Mateus 2:13-15"
+            },
+            {
+              "id": "q028",
+              "dificuldade": 3,
+              "enunciado": "Quantos anos Jesus tinha quando foi encontrado no templo discutindo com os doutores da lei?",
+              "alternativas": ["10 anos", "12 anos", "15 anos", "18 anos"],
+              "correta": 1,
+              "explicacao": "Jesus tinha doze anos quando ficou no templo conversando com os mestres (Lucas 2:42).",
+              "referencia": "Lucas 2:41-52"
+            }
+          ]
+        },
+        {
+          "id": "licao_3_2",
+          "ordem": 2,
+          "nome": "Ministério e milagres",
+          "perguntas": [
+            {
+              "id": "q029",
+              "dificuldade": 1,
+              "enunciado": "Quantos discípulos Jesus escolheu para serem seus apóstolos?",
+              "alternativas": ["7", "10", "12", "24"],
+              "correta": 2,
+              "explicacao": "Jesus escolheu doze apóstolos para acompanhá-lo (Marcos 3:14).",
+              "referencia": "Marcos 3:13-19"
+            },
+            {
+              "id": "q030",
+              "dificuldade": 1,
+              "enunciado": "Qual foi o primeiro milagre de Jesus, segundo o Evangelho de João?",
+              "alternativas": ["Multiplicação dos pães", "Transformar água em vinho", "Cura do cego", "Acalmar a tempestade"],
+              "correta": 1,
+              "explicacao": "Em Caná da Galileia, durante uma festa de casamento, Jesus transformou água em vinho (João 2:1-11).",
+              "referencia": "João 2:1-11"
+            },
+            {
+              "id": "q031",
+              "dificuldade": 2,
+              "enunciado": "Quantos pães e peixes Jesus usou para alimentar 5 mil homens?",
+              "alternativas": ["3 pães e 1 peixe", "5 pães e 2 peixes", "7 pães e 3 peixes", "10 pães e 5 peixes"],
+              "correta": 1,
+              "explicacao": "Cinco pães e dois peixes alimentaram a multidão; sobraram doze cestos (Mateus 14:17-20).",
+              "referencia": "Mateus 14:13-21"
+            },
+            {
+              "id": "q032",
+              "dificuldade": 2,
+              "enunciado": "Qual amigo Jesus ressuscitou depois de quatro dias morto?",
+              "alternativas": ["Marcos", "Lázaro", "Mateus", "Bartolomeu"],
+              "correta": 1,
+              "explicacao": "Lázaro, irmão de Marta e Maria, foi ressuscitado em Betânia (João 11).",
+              "referencia": "João 11"
+            },
+            {
+              "id": "q033",
+              "dificuldade": 3,
+              "enunciado": "Qual é a primeira bem-aventurança do Sermão do Monte?",
+              "alternativas": ["Bem-aventurados os mansos", "Bem-aventurados os puros de coração", "Bem-aventurados os pobres de espírito", "Bem-aventurados os pacificadores"],
+              "correta": 2,
+              "explicacao": "'Bem-aventurados os pobres de espírito, porque deles é o reino dos céus' (Mateus 5:3).",
+              "referencia": "Mateus 5:3"
+            }
+          ]
+        },
+        {
+          "id": "licao_3_3",
+          "ordem": 3,
+          "nome": "Paixão e ressurreição",
+          "perguntas": [
+            {
+              "id": "q034",
+              "dificuldade": 1,
+              "enunciado": "Qual discípulo traiu Jesus por trinta moedas de prata?",
+              "alternativas": ["Pedro", "Judas Iscariotes", "Tomé", "Tiago"],
+              "correta": 1,
+              "explicacao": "Judas Iscariotes traiu Jesus por trinta moedas de prata (Mateus 26:14-16).",
+              "referencia": "Mateus 26:14-16"
+            },
+            {
+              "id": "q035",
+              "dificuldade": 1,
+              "enunciado": "Como se chamava o lugar onde Jesus foi crucificado?",
+              "alternativas": ["Getsêmani", "Gólgota", "Belém", "Cesareia"],
+              "correta": 1,
+              "explicacao": "Gólgota significa 'Lugar da Caveira' (João 19:17).",
+              "referencia": "João 19:17"
+            },
+            {
+              "id": "q036",
+              "dificuldade": 2,
+              "enunciado": "Quem foi o governador romano que entregou Jesus para ser crucificado?",
+              "alternativas": ["Herodes Antipas", "Pôncio Pilatos", "César Augusto", "Caifás"],
+              "correta": 1,
+              "explicacao": "Pôncio Pilatos, governador da Judeia, lavou as mãos e entregou Jesus (Mateus 27:24-26).",
+              "referencia": "Mateus 27"
+            },
+            {
+              "id": "q037",
+              "dificuldade": 3,
+              "enunciado": "Segundo João 20, quem foram as primeiras pessoas a chegar ao túmulo vazio?",
+              "alternativas": ["Apenas Pedro", "Maria Madalena, e depois Pedro e João", "Os doze apóstolos juntos", "Os soldados romanos"],
+              "correta": 1,
+              "explicacao": "Maria Madalena chegou primeiro de madrugada e avisou Pedro e João, que correram ao túmulo (João 20:1-4).",
+              "referencia": "João 20:1-10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mundo_4",
+      "ordem": 4,
+      "nome": "Igreja Primitiva e Cartas",
+      "descricao": "Atos dos Apóstolos e as cartas que moldaram a Igreja.",
+      "licoes": [
+        {
+          "id": "licao_4_1",
+          "ordem": 1,
+          "nome": "Pentecostes e a expansão",
+          "perguntas": [
+            {
+              "id": "q038",
+              "dificuldade": 1,
+              "enunciado": "Em qual festa o Espírito Santo desceu sobre os discípulos como línguas de fogo?",
+              "alternativas": ["Páscoa", "Pentecostes", "Tabernáculos", "Purim"],
+              "correta": 1,
+              "explicacao": "No dia de Pentecostes o Espírito Santo desceu em forma de línguas de fogo (Atos 2:1-4).",
+              "referencia": "Atos 2"
+            },
+            {
+              "id": "q039",
+              "dificuldade": 2,
+              "enunciado": "Em qual cidade os seguidores de Jesus foram chamados de 'cristãos' pela primeira vez?",
+              "alternativas": ["Jerusalém", "Éfeso", "Antioquia", "Roma"],
+              "correta": 2,
+              "explicacao": "Em Antioquia, pela primeira vez, os discípulos foram chamados cristãos (Atos 11:26).",
+              "referencia": "Atos 11:26"
+            },
+            {
+              "id": "q040",
+              "dificuldade": 2,
+              "enunciado": "Quem foi o primeiro mártir cristão, apedrejado por sua pregação?",
+              "alternativas": ["Pedro", "Estêvão", "Tiago", "Filipe"],
+              "correta": 1,
+              "explicacao": "Estêvão foi apedrejado por sua fé, na presença de Saulo, que depois se tornaria Paulo (Atos 7).",
+              "referencia": "Atos 7"
+            },
+            {
+              "id": "q041",
+              "dificuldade": 3,
+              "enunciado": "Em qual cidade Paulo teve o encontro com Jesus que o cegou e levou à sua conversão?",
+              "alternativas": ["Tarso", "Damasco", "Antioquia", "Listra"],
+              "correta": 1,
+              "explicacao": "Saulo ia a Damasco para perseguir cristãos quando uma luz do céu o cegou e Jesus falou com ele (Atos 9).",
+              "referencia": "Atos 9"
+            }
+          ]
+        },
+        {
+          "id": "licao_4_2",
+          "ordem": 2,
+          "nome": "Cartas e doutrina",
+          "perguntas": [
+            {
+              "id": "q042",
+              "dificuldade": 1,
+              "enunciado": "Quem escreveu a maior parte das cartas do Novo Testamento?",
+              "alternativas": ["Pedro", "João", "Paulo", "Tiago"],
+              "correta": 2,
+              "explicacao": "Paulo é tradicionalmente atribuído como autor de 13 cartas do Novo Testamento.",
+              "referencia": "Cartas paulinas"
+            },
+            {
+              "id": "q043",
+              "dificuldade": 2,
+              "enunciado": "Em qual carta encontramos o 'capítulo do amor' (capítulo 13)?",
+              "alternativas": ["Romanos", "1 Coríntios", "Gálatas", "Filipenses"],
+              "correta": 1,
+              "explicacao": "1 Coríntios 13 é o célebre capítulo sobre o amor.",
+              "referencia": "1 Coríntios 13"
+            },
+            {
+              "id": "q044",
+              "dificuldade": 3,
+              "enunciado": "Quantas igrejas da Ásia são mencionadas nas cartas iniciais do Apocalipse?",
+              "alternativas": ["3", "5", "7", "12"],
+              "correta": 2,
+              "explicacao": "São sete: Éfeso, Esmirna, Pérgamo, Tiatira, Sardes, Filadélfia e Laodiceia (Apocalipse 2-3).",
+              "referencia": "Apocalipse 2-3"
+            },
+            {
+              "id": "q045",
+              "dificuldade": 3,
+              "enunciado": "Quem escreveu o livro de Apocalipse, e em qual ilha ele estava exilado?",
+              "alternativas": ["Pedro, em Patmos", "Paulo, em Malta", "João, em Patmos", "Tiago, em Chipre"],
+              "correta": 2,
+              "explicacao": "O apóstolo João recebeu as visões enquanto estava exilado na ilha de Patmos (Apocalipse 1:9).",
+              "referencia": "Apocalipse 1:9"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
