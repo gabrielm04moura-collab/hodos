@@ -12,7 +12,8 @@
       "PowerShell(cd \"c:\\\\Users\\\\gabri\\\\OneDrive\\\\Documentos\\\\hodos\"; $env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git config user.email \"gabrielm04moura@gmail.com\"; git config user.name \"Gabriel Moura\"; git add .; git commit -m \"feat: projeto inicial Hodos — Next.js + perguntas bíblicas\" 2>&1)",
       "PowerShell(cd \"c:\\\\Users\\\\gabri\\\\OneDrive\\\\Documentos\\\\hodos\"; $env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git branch -M main; git push -u origin main 2>&1)",
       "PowerShell(cd \"c:\\\\Users\\\\gabri\\\\OneDrive\\\\Documentos\\\\hodos\"; $env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git pull origin main --rebase --allow-unrelated-histories 2>&1)",
-      "PowerShell(cd \"c:\\\\Users\\\\gabri\\\\OneDrive\\\\Documentos\\\\hodos\"; $env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git fetch origin main; git reset --soft HEAD~1; git add .; git commit -m \"feat: projeto inicial Hodos — Next.js + perguntas bíblicas\"; git pull origin main --allow-unrelated-histories --no-rebase -X ours; git push -u origin main 2>&1)"
+      "PowerShell(cd \"c:\\\\Users\\\\gabri\\\\OneDrive\\\\Documentos\\\\hodos\"; $env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git fetch origin main; git reset --soft HEAD~1; git add .; git commit -m \"feat: projeto inicial Hodos — Next.js + perguntas bíblicas\"; git pull origin main --allow-unrelated-histories --no-rebase -X ours; git push -u origin main 2>&1)",
+      "Read(//c/Users/gabri/AppData/Local/Temp/claude/c--Users-gabri/OneDrive/Documentos/hodos/fcdf096e-8b89-4b70-8d95-ceac44100fa3/tasks/**)"
     ],
     "additionalDirectories": [
       "c:\\Users\\gabri\\Downloads"
