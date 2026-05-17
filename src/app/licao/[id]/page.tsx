@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import dadosRaw from "../../../../data/perguntas.json";
+import { createClient } from "@/lib/supabase/client";
 
 interface Pergunta {
   id: string;
@@ -33,6 +34,7 @@ export default function LicaoPage() {
   const params = useParams();
   const router = useRouter();
   const licao = encontrarLicao(params.id as string);
+  const supabase = createClient();
 
   const [atual, setAtual] = useState(0);
   const [selecionada, setSelecionada] = useState<number | null>(null);
@@ -54,13 +56,48 @@ export default function LicaoPage() {
   const total = licao.perguntas.length;
   const progresso = Math.round((atual / total) * 100);
 
+  async function salvarProgresso(acertosFinais: number) {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return;
+
+    const xpGanho = acertosFinais * 10;
+
+    await supabase.from("user_progress").insert({
+      user_id: user.id,
+      licao_id: licao!.id,
+      acertos: acertosFinais,
+      total,
+    });
+
+    const { data: perfil } = await supabase
+      .from("profiles")
+      .select("xp, ofensiva, ultima_atividade")
+      .eq("id", user.id)
+      .single();
+
+    const hoje = new Date().toISOString().split("T")[0];
+    const ontem = new Date(Date.now() - 86400000).toISOString().split("T")[0];
+    const novaOfensiva = perfil?.ultima_atividade === ontem
+      ? (perfil.ofensiva ?? 0) + 1
+      : perfil?.ultima_atividade === hoje
+      ? perfil.ofensiva ?? 1
+      : 1;
+
+    await supabase.from("profiles").update({
+      xp: (perfil?.xp ?? 0) + xpGanho,
+      ofensiva: novaOfensiva,
+      ultima_atividade: hoje,
+    }).eq("id", user.id);
+  }
+
   function confirmar() {
     if (selecionada === null) return;
     if (selecionada === pergunta.correta) setAcertos((a) => a + 1);
   }
 
-  function avancar() {
+  async function avancar() {
     if (atual + 1 >= total) {
+      await salvarProgresso(selecionada === pergunta.correta ? acertos + 1 : acertos);
       setFinalizada(true);
     } else {
       setAtual((a) => a + 1);
@@ -72,22 +109,26 @@ export default function LicaoPage() {
   const acertou = selecionada === pergunta.correta;
 
   if (finalizada) {
-    const pct = Math.round((acertos / total) * 100);
+    const acertosFinais = selecionada === pergunta.correta ? acertos + 1 : acertos;
+    const pct = Math.round((acertosFinais / total) * 100);
+    const xpGanho = acertosFinais * 10;
+
     return (
       <main className="flex flex-col items-center justify-center min-h-screen px-6 text-center">
         <div className="text-6xl mb-4">{pct >= 70 ? "🏆" : "📖"}</div>
         <h2 className="text-2xl font-bold text-indigo-700 mb-2">Lição concluída!</h2>
         <p className="text-slate-500 mb-1">{licao.nome}</p>
-        <p className="text-4xl font-bold text-indigo-600 my-4">{acertos}/{total}</p>
-        <p className="text-slate-500 mb-8">
+        <p className="text-4xl font-bold text-indigo-600 my-4">{acertosFinais}/{total}</p>
+        <p className="text-green-600 font-semibold mb-1">+{xpGanho} XP</p>
+        <p className="text-slate-500 mb-8 text-sm">
           {pct >= 70 ? "Ótimo trabalho! Continue assim." : "Continue praticando, você vai melhorar!"}
         </p>
         <div className="flex gap-3">
           <button
-            onClick={() => { setAtual(0); setSelecionada(null); setAcertos(0); setFinalizada(false); }}
+            onClick={() => router.push("/perfil")}
             className="border border-indigo-300 text-indigo-600 px-6 py-3 rounded-xl font-medium hover:bg-indigo-50 transition-colors"
           >
-            Refazer
+            Ver perfil
           </button>
           <button
             onClick={() => router.push("/mapa")}
@@ -110,10 +151,7 @@ export default function LicaoPage() {
       </div>
 
       <div className="w-full bg-slate-200 rounded-full h-2 mb-6">
-        <div
-          className="bg-indigo-500 h-2 rounded-full transition-all"
-          style={{ width: `${progresso}%` }}
-        />
+        <div className="bg-indigo-500 h-2 rounded-full transition-all" style={{ width: `${progresso}%` }} />
       </div>
 
       <p className="text-xs text-slate-400 mb-1">
